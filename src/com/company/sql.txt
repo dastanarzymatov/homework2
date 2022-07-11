@@ -1,0 +1,150 @@
+CREATE TABLE car
+(
+    marka               VARCHAR NOT NULL,
+    model               VARCHAR,
+    number              INT,
+    year_of_manufakture INT
+);
+INSERT INTO car(marka, model, number, year_of_manufakture)
+VALUES ('TOYOTA', 'PRIUS', 124, 2012),
+       ('TESLA', 'MODEL X', 2020, 307),
+       ('HONDA', 'FIT', 2008, 517),
+       ('TOYOTA', 'AVENSIS', 2002, 719);
+CREATE TABLE student
+(
+    name  VARCHAR,
+    age   INT,
+    kours INT,
+    grup  VARCHAR NOT NULL
+);
+INSERT INTO student(name, age, kours, grup)
+VALUES ('DASTAN', 20, 2, 'JAVA 6'),
+       ('JAULAN', 22, 2, 'JAVA 6'),
+       ('NURLAN', 30, 1, 'JAVA 7'),
+       ('ULAN', 27, 3, 'JAVA 5');
+CREATE TABLE telephon
+(
+    model VARCHAR NOT NULL,
+    name  VARCHAR NOT NULL,
+    summ  INT
+);
+INSERT INTO telephon(model, name, summ)
+VALUES ('Apple', '13 pro', 105000),
+       ('Apple', '11', 40000),
+       ('Redmi', 'not 8', 12000),
+       ('SAMSUNG', '22 ULTRA', 90000);
+CREATE TABLE mentor
+(
+    name  VARCHAR NOT NULL,
+    age   INT,
+    wages INT,
+    grup  VARCHAR NOT NULL
+
+);
+INSERT INTO mentor(name, age, wages, grup)
+VALUES ('AIJAMAL', 27, 40000, 'java 6'),
+       ('NURISA', 19, 30000, 'java 6'),
+       ('Maksat', 33, 35000, 'java 6'),
+       ('DASTAN', 20, 43000, 'java 8');
+
+CREATE TABLE film
+(
+    name  VARCHAR,
+    year  INT,
+    acter VARCHAR
+);
+INSERT INTO film(name, year, acter)
+VALUES ('TOR', 2017, 'MAKS JISON'),
+       ('FORSAJ', 2019, 'TORETO'),
+       ('DOSKE', 2022, 'SHUMA');
+CREATE TABLE Peaksoft
+(
+    name      VARCHAR NOT NULL,
+    adres     VARCHAR NOT NULL,
+    insta_akk VARCHAR NOT NULL
+);
+
+INSERT INTO Peaksoft(name, adres, insta_akk)
+VALUES ('PEAKSOFT', 'grajdanskaia 119', 'Peaksoft_house');
+
+CREATE TABLE noutbuk(
+    model VARCHAR not null ,
+    year INT,
+    processor VARCHAR NOT NULL ,
+    summ INT
+);
+INSERT INTO noutbuk(model, year, processor,summ)
+VALUES ('HP ENVY',2022,'CORE I5',100000),
+       ('MAKBOOK',2022,'CORE I7',110000),
+       ('ASUS',2022,'CORE I6',95000);
+CREATE TABLE animal(
+    paroda VARCHAR,
+    name VARCHAR,
+    age INT,
+    color VARCHAR
+);
+INSERT INTO animal(paroda,name, age, color)
+VALUES ('COW','MUMU',2,'KAARA'),
+       ('CAT','TOM',2,'AK'),
+       ('MOUSE','JERRY',2,'SARY');
+CREATE TABLE Kyrgyzstan(
+    name_oblast VARCHAR,
+    special_plase VARCHAR NOT NULL ,
+    person_in_oblast VARCHAR
+);
+INSERT INTO Kyrgyzstan(name_oblast, special_plase, person_in_oblast)
+VALUES ('BATKEN','AIGUL','DASTAN'),
+       ('OSH','SULAIMAN TOO','AIZADA'),
+       ('ISSYK KUL','KOL','AIJAMAL');
+CREATE TABLE Kafe(
+    name_cafe VARCHAR,
+    addres_kafe VARCHAR,
+    year_kafe INT
+);
+INSERT INTO Kafe(name_cafe, addres_kafe, year_kafe)
+VALUES ('SALKYN TOR','ALMATINKA 122',2020),
+       ('SARY TASH','ALMATINKA 142',2019),
+       ('SUPARA','KOK DJAR',2000);
+CREATE TABLE myComputers
+(
+    id            INT,
+    model         VARCHAR(50),
+    companiesName CHAR(50),
+    ssd_computer  INT,
+    prosessor     CHAR(50)
+);
+INSERT INTO myComputers(id, model, companiesName, ssd_computer, prosessor)
+VALUES (1, 'Lenovo X5', 'Lenovo Corparetion', 552, 'RYZEN-5'),
+       (2, 'Dell', 'Packard Bell', 552, '4');
+
+CREATE TABLE myCat
+(
+    id         INT  PRIMARY KEY,
+    name       VARCHAR(30),
+    color      VARCHAR NOT NULL,
+    cats_Breed VARCHAR
+);
+INSERT INTO myCat(id, name, color, cats_Breed)
+VALUES (2, 'Lolly', 'white', 'Балийская кошка'),
+       (3, 'Daisy', 'black', 'Турецкий ван');
+
+CREATE TABLE myFavoriteBooks(
+                                id  SERIAL PRIMARY KEY,
+                                booksName VARCHAR NOT NULL,
+                                booksAuthor VARCHAR,
+                                printingHousee VARCHAR NOT NULL,
+                                yearOFpublication INT
+);
+INSERT INTO myFavoriteBooks(booksName,booksAuthor, printingHousee,yearOFpublication)
+VALUES ('Гордость и предубеждения','Jane Eyre', 'Альянс пресс', 1998),
+       ( 'Last lect', 'Randy Pausch', 'New York Times', 2005),
+       ( 'Война и мир','Лев Толстой', 'Москва', 1912 ),
+       ( 'Адам болгум келет', 'Т. Касымбеков', 'Мурас басмаканасы', 2020);
+CREATE TABLE my_car(
+    name VARCHAR,
+    year INT,
+    model VARCHAR,
+    color VARCHAR
+);
+INSERT INTO my_car(name, year, model, color)
+VALUES ('TOYOTA',2012,'PRIUS','WHITE')
